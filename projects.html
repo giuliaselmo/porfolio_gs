@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetti — Giulia Selmo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pg-row { display:grid; gap:2px; }
+    .pg-row-2a { grid-template-columns:1.4fr 1fr; }
+    .pg-row-2b { grid-template-columns:1fr 1.4fr; }
+    .pg-row-2c { grid-template-columns:1fr 1.6fr; }
+    .pg-wrap { padding:0 4rem; display:flex; flex-direction:column; gap:2px; margin-bottom:8rem; }
+    .proj-h-43  { aspect-ratio:4/3; }
+    .proj-h-34  { aspect-ratio:3/4; }
+    .proj-h-45  { aspect-ratio:4/5; }
+    .proj-h-169 { aspect-ratio:16/9; }
+    .proj-h-pan { aspect-ratio:21/8; min-height:260px; }
+    @media(max-width:768px){
+      .pg-row-2a,.pg-row-2b,.pg-row-2c { grid-template-columns:1fr; }
+      .pg-wrap { padding:0 1.5rem; }
+      .proj-h-43,.proj-h-34,.proj-h-45,.proj-h-169,.proj-h-pan { aspect-ratio:4/3; min-height:unset; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+<nav>
+    <a href="index.html" class="nav-logo">GS</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Progetti</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contatti</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-overlay">
+    <div class="menu-overlay-inner">
+      <ul class="menu-overlay-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Progetti</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contatti</a></li>
+      </ul>
+      <p class="menu-overlay-sub">giuliaselmo@studio.com</p>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <p class="page-hero-label">Selected Works — 2024/2026</p>
+    <h1 class="page-hero-title">PROGETTI.</h1>
+  </section>
+
+  <div class="projects-intro">
+    <p>Brand identity, linee guida, cortometraggi, poster, illustrazioni e social design.
+    Ogni progetto nasce da una ricerca visiva attenta, da una dialettica tra forma e contenuto
+    che non lascia spazio alla casualità.</p>
+  </div>
+
+  <div class="pg-wrap">
+
+    <!-- ROW 1 -->
+    <div class="pg-row pg-row-2a">
+      <a href="project-delibare.html" class="proj-item reveal proj-h-43">
+        <div class="proj-item-bg"><img src="imag/delibare/delibare8.png" alt="Delibare"></div>
+        <div class="proj-item-content">
+          <span class="proj-num">01</span>
+          <p class="proj-cat">Brand Identity</p>
+          <h2 class="proj-title">DELIBARE</h2>
+          <p class="proj-year">2024</p>
+        </div>
+        <div class="proj-arrow">→</div>
+      </a>
+      <a href="project-strangerthings.html" class="proj-item reveal proj-h-34" data-delay="100">
+        <div class="proj-item-bg"><img src="imag/stranger thing/stranger_copertina.jpeg" alt="Stranger Things"></div>
+        <div class="proj-item-content">
+          <span class="proj-num">02</span>
+          <p class="proj-cat">Linee Guida</p>
+          <h2 class="proj-title">STRANGER<br>THINGS</h2>
+          <p class="proj-year">2024</p>
+        </div>
+        <div class="proj-arrow">→</div>
+      </a>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="pg-row pg-row-2b">
+      <a href="project-brado.html" class="proj-item reveal proj-h-45">
+        <div class="proj-item-bg"><img src="imag/brado/esterno.jpg" alt="Brado Burger"></div>
+        <div class="proj-item-content">
+          <span class="proj-num">03</span>
+          <p class="proj-cat">Brand Identity</p>
+          <h2 class="proj-title">BRADO<br>BURGER</h2>
+          <p class="proj-year">2023</p>
+        </div>
+        <div class="proj-arrow">→</div>
+      </a>
+      <a href="project-memoria.html" class="proj-item reveal proj-h-169" data-delay="100">
+        <div class="proj-item-bg"><img src="imag/memoria/copertina_memoria.jpg" alt="Memoria"></div>
+        <div class="proj-item-content">
+          <span class="proj-num">04</span>
+          <p class="proj-cat">Cortometraggio</p>
+          <h2 class="proj-title">MEMORIA</h2>
+          <p class="proj-year">2026</p>
+        </div>
+        <div class="proj-arrow">→</div>
+      </a>
+    </div>
+
+    <!-- ROW 3: C2C full width -->
+    <a href="project-c2c.html" class="proj-item reveal proj-h-pan">
+      <div class="proj-item-bg"><img src="imag/locandine/3 poster.jpg" alt="C2C Festival"></div>
+      <div class="proj-item-content">
+        <span class="proj-num">05</span>
+        <p class="proj-cat">Poster Design</p>
+        <h2 class="proj-title" style="font-size:clamp(2.8rem,5.5vw,7rem);">C2C FESTIVAL</h2>
+        <p class="proj-year">2024</p>
+      </div>
+      <div class="proj-arrow">→</div>
+    </a>
+
+    <!-- ROW 4 -->
+    <div class="pg-row pg-row-2c">
+      <a href="project-illustrazioni.html" class="proj-item reveal proj-h-34">
+        <div class="proj-item-bg"><img src="imag/illustrazioni/illustrazione1.jpg" alt="Illustrazioni"></div>
+        <div class="proj-item-content">
+          <span class="proj-num">06</span>
+          <p class="proj-cat" style="color:var(--pink);">Digital Illustration</p>
+          <h2 class="proj-title" >ILLUSTRA<br>ZIONI</h2>
+          <p class="proj-year" >2023 — 2024</p>
+        </div>
+        <div class="proj-arrow" >→</div>
+      </a>
+      <a href="project-moodart.html" class="proj-item reveal proj-h-43" data-delay="100">
+        <div class="proj-item-bg"><img src="imag/progetti moodart/video presentazione open day47.jpg" alt="MoodArt"></div>
+        <div class="proj-item-content">
+          <span class="proj-num">07</span>
+          <p class="proj-cat">Social Media Design</p>
+          <h2 class="proj-title">MOOD<span style="color:var(--pink);">ART</span></h2>
+          <p class="proj-year">2023 — 2024</p>
+        </div>
+        <div class="proj-arrow">→</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">Brand Identity</span>
+      <span class="marquee-item">Editorial Design</span>
+      <span class="marquee-item">Poster Design</span>
+      <span class="marquee-item">Illustration</span>
+      <span class="marquee-item">Social Design</span>
+      <span class="marquee-item">Motion Graphics</span>
+      <span class="marquee-item">Art Direction</span>
+    </div>
+  </div>
+
+  <section style="padding:8rem 4rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:3rem;">
+    <p class="section-label reveal">Hai un progetto?</p>
+    <h2 style="font-family:var(--font-display);font-size:clamp(3rem,6vw,8rem);line-height:0.9;" class="reveal" data-delay="100">LAVORIAMO<br>INSIEME.</h2>
+    <a href="contact.html" class="btn btn-pink btn-arrow reveal" data-delay="200">Scrivimi</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div class="footer-logo">GIULIA<br>SELMO<span>.</span></div></div>
+      <div class="footer-nav">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Progetti</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contatti</h4>
+        <p>
+          <a href="mailto:giuliaselmo@studio.com">giuliaselmo04@gmail.com</a><br>
+          <a href="#">Instagram</a><br>
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Giulia Selmo — Tutti i diritti riservati</p>
+      <p>Graphic &amp; Media Designer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
